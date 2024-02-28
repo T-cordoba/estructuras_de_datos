@@ -9,3 +9,6 @@ class Student:
 
     def average_grade(self):
         return sum(self.grades) / len(self.grades)
+
+    def __str__(self):
+        return f"{self.name} (edad: {self.age}) (promedio: {self.average_grade()}"
