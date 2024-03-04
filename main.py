@@ -27,6 +27,8 @@ for st in students:
     if st.average_grade() >= threshold:
         dict_students[st.name] = st
 
+lc_c_stu = {st.name: st for st in students if st.average_grade() >= threshold}
+
 print(f"Diccionario de estudiantes")
 print(dict_students)
 
